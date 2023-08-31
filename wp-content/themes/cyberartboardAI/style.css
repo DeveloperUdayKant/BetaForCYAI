@@ -1,0 +1,643 @@
+/*
+
+Theme Name: cyberartboardAI
+Theme URI: https://www.comxtech.com/
+Author: Suresh selvaraj
+Author URI: https://www.comxtech.com/suresh
+Description: cyberartboard App is the theme designed to WordPress Theme Development. You can play around and you can use this for commercial and personal projects.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cyberartboard-ai
+Tags: two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+}
+.container__logo{
+   position: relative;
+   top:1rem;
+   padding-left:4rem;
+   
+}
+.container__content{
+    height:auto;
+    width:100%;
+
+}
+.container__content__img{
+    position: relative;
+    top:-2rem;
+    padding-left:3rem;
+}
+section{
+    width:100%;
+    height:60vh;
+    
+}
+navbar{
+    display: grid;
+    grid-template-columns: 400px 800px;    
+    justify-content: center;    
+}
+.navbar__image{
+    width:100%;
+    position: relative; 
+    top:-11.5rem;
+    left:-.4rem;
+}
+.navbar__icon ul{
+    list-style-type :none;
+}
+.navbar__icon ul li a{
+text-decoration: none;
+color:#000;
+font-size: 1.2rem;
+
+}
+
+.navbar__icon ul li a img{
+   
+    margin-right:0.5rem;
+    margin-top:.9rem;
+    
+}
+ul{
+    padding-left: 0.5rem !important;
+}
+
+
+@media(max-width: 767px){
+    .container__logo{
+        
+        top:0rem;
+        padding:1rem 2rem;
+        height: auto;
+        width:100%;
+    }
+    .container__content__img{
+        position: relative;
+        top:-1rem;
+        padding-left:2rem;
+
+    }
+    .navbar__image{
+        width:80%;        
+        top:0.5rem;
+        left:1rem;
+       
+       
+    }
+    navbar{
+        display: block;
+        grid-template-columns:800px;    
+        height:10vh;  
+    }
+    .navbar__icon{
+        height:10vh;
+        margin-bottom: 20rem;
+        padding-left: 2rem;
+
+    }
+
+   
+}
+
+@media(max-width: 574px){
+
+    .container__logo{
+        
+        top:0rem;
+        padding:1rem 2rem;
+        height: auto;
+        width:100%;
+    }
+    .container__content__img{
+        position: relative;
+        top:-1rem;
+        padding-left:2rem;
+
+    }
+   
+    .navbar__image{
+        width:80%;        
+        top:0.5rem;
+        left:1rem;
+       padding-bottom: 10rem;
+
+
+       
+    }
+    navbar{
+        display: block;
+        grid-template-columns:auto;    
+         
+    }
+    .navbar__icon{
+        height:10vh;
+        margin-bottom: 20rem;
+        padding-left: 2rem;
+
+    }
+
+}
+
+/*footer*/
+
+.fab {
+    padding: 5px;
+    font-size: 1.1rem !important;
+ 
+    width: 50px;
+    text-align: center;
+    
+}
+.containers{
+	max-width: 1200px;
+	margin:auto;
+    
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col ul{
+	list-style-type: none;
+}
+.footer{
+	background:#24262B;
+    padding:40px 0;
+    line-height: 1.5;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+
+.footer-col-form{
+	width: 40%;
+  padding-left:100px;
+   
+}
+.footer-col h4,.footer-col-form h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 14px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+
+
+
+.footer-col-form p{
+	color: #bbbbbb;
+	font-size:0.9rem;
+	padding:.6rem;
+	
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 100%;	
+    margin-bottom: 30px;
+    padding-left: 2rem;
+}
+
+.footer-col-form {
+    width: 100%;
+    padding-left: 2rem;
+}
+
+.footer{
+    margin-top:40rem;
+  }
+
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+    padding-left: 2rem;
+}
+.footer-col-form
+{
+	width: 100%;
+    padding-left: 2rem;
+}
+  .footer{
+    margin-top:33rem;
+  }
+
+}
+
+
+.stay__connect  form  select,.stay__connect form input{
+	border-radius:.3rem;
+	font-size:.9rem;
+	height:3rem;
+    padding:0.2rem;	
+}
+
+.stay__connect form input[type=submit]{
+	width:5.5rem;
+	cursor:pointer;
+}
+
+
+
+/*modal popup*/
+
+.modal {
+  display: flex;
+  flex-direction: column;
+ /* justify-content: center;
+ gap: 0.4rem;*/
+  
+  width: 1100px;
+  padding: 1rem;
+  /*
+  min-height: 250px;*/
+  position: absolute;
+  z-index: 2;
+  top: 8%;
+  left:10%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  height:90% !important;
+}
+
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.modal p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.btn{
+    padding: 0.1rem;
+}
+
+
+.btn-close {
+  /*position:absolute;*/
+  top:1rem;
+  right:50rem;
+  transform: translate(10px, -20px);
+  padding: 0.7rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+  
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+  
+}
+
+.hidden {
+  display: none;
+}
+
+/*category popup*/
+.category__list{
+
+display:flex;
+justify-content: space-between;
+}
+.category__list .cate__essential ul li{
+
+    list-style-type: none;
+    padding:0.4rem;
+    
+}
+
+.cate__sports ul li{
+    list-style-type: none;
+    padding:0.4rem;
+}
+
+.cate__businesswear ul li {
+    list-style-type: none;
+    padding:0.4rem;
+}
+
+.cate__schoolwear  ul li{
+    list-style-type: none;
+    padding:0.4rem;
+}
+
+
+.cate__sports ul li a{ 
+    font-size: 1.2rem;
+    /*
+    margin:1.3rem 0;*/
+    text-decoration: none;
+    color:#000;
+}
+
+.cate__businesswear ul li a{
+    font-size: 1.2rem;    
+    margin:1.3rem 0;
+    text-decoration: none;
+    color:#000;
+}
+
+
+.cate__schoolwear  ul li a{
+    text-decoration: none;
+    color:#000;
+    font-size: 1.2rem;
+    
+    margin:1.3rem 0;
+}
+.cate__essential ul li a{
+    font-size: 1.2rem;
+    
+    margin:1.3rem 0;
+    color:#000;
+    text-decoration: none;
+}
+
+@media(max-width: 574px){
+.category__list{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+}
+
+@media(max-width: 767px){
+    .category__list{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    .modal {
+      
+     /* justify-content: center;
+     gap: 0.4rem;*/
+      
+      width: 85%;
+      margin-top:2rem;
+      padding: 1rem;
+      height:auto;
+      /*
+      min-height: 250px;*/
+      
+      top: 15%;
+      left:8%;
+      
+      height:90% !important;
+    }
+
+    }
+
+
+
+
+
+    
+.modalowndesign {
+    display: flex;
+    flex-direction: column;
+    /*
+    justify-content: center;
+   gap: 0.4rem;
+    */
+    width: 1100px;
+    padding: 1rem;
+    /*
+    min-height: 250px;*/
+    position: absolute;
+    z-index: 2;
+    top: 8%;
+    left:10%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    height:900px !important;
+  }
+  
+  .modalowndesign .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+    
+  .btn{
+      padding: 0.1rem;
+  }
+  
+  
+  .btn-closeowndesign {
+    /*position:absolute;*/
+    top:1rem;
+    right:50rem;
+    transform: translate(10px, -20px);
+    padding: 0.7rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;
+    border:1px solid transparent;
+    
+  }
+  
+  .overlayowndesign {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+
+  /*owndesign request form*/
+  .container__designrequest{
+    margin-left:1rem;
+  }
+  .requestform__content{
+    display:flex;
+    width:95%;/*
+    justify-content: center;
+        
+    background: red;   */
+    outline: none;    
+   
+  }
+  .requestform__right_1{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    /*background: yellow;  */
+    
+  }
+  .requestform__left{
+    padding: 1rem;
+  }
+
+ 
+
+  .requestform__right_1 .requestform__right_img{
+   width:250px;
+   height:auto;
+   padding:0.5rem;
+   
+  }
+  .btn-action{
+    display:flex;
+    gap:20rem;
+  }
+
+  .btn-action__event{
+    display:grid;    
+    width:100%;
+  }
+  .btn-action__event button{
+    text-align:left;
+    padding:.5rem;
+    background: transparent;
+    border: none;
+  }
+
+  .submit__action button{
+   
+    padding-left:40rem;
+    
+    
+  }
+  .category__item,#desc{
+  height:40px;
+  width:200px;
+  border-radius: 4px;
+  margin:0.5rem;
+  
+}
+.design_request_title{
+    margin-top:1.5rem;
+    
+}
+
+
+ button.submit__action {
+    margin-left: 45rem;
+}
+
+@media(max-width: 574px){
+  .requestform__right_1 .requestform__right_img{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+   }
+
+  }
+  
+  @media(max-width: 767px){     
+  
+      
+    .modalowndesign {  
+
+        width: 78%;
+        margin-top:2rem;
+        padding: 1rem;
+        height:auto;  
+        top: 15%;
+        left:8%;        
+        height:auto !important; 
+        position: absolute;
+        z-index: 2;
+      
+    }
+    .requestform__content{
+      display:flex;
+      flex-direction: column;
+    }
+    .requestform__left{
+      width:100% !important;
+    }
+    textarea{
+      width:98%;
+      
+    }
+    .category__item,#desc{
+      width:300px;
+    }
+    .item-11{
+   margin-left:50px;
+    }
+      
+    
+    .btn-action__event button
+    {
+      width:250px;
+    }
+  button.submit__action
+  {
+    margin-left: 20rem;
+  }
+
+    }
+    
+   
